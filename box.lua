@@ -1,10 +1,24 @@
 box = {x=64,y=96,w=16,h=16}
 
-
 function update_box()
-    if can_update(2) then
-        box.x = box.x - 1
+
+    local next_x = box.x
+    if player_pulling then
+        next_x = next_x + 1
+    else
+        next_x = next_x - 1
     end
+    if box_limits_collision(next_x) then
+        return
+    end
+    box.x = next_x
+end
+
+function box_limits_collision(next_x)
+    if( next_x- box.w/2 < 0 or next_x + box.w/2 > 128) then
+        return true
+    end
+    return false
 end
 
 
