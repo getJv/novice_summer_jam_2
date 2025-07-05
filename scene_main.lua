@@ -14,7 +14,7 @@ end
 
 function scene_main_draw()
     cls()
-    rectfill(0,0,127,127,15) -- temp bg
+    map(0,0)
     draw_left_mill_mouth() -- mouth should be behind the box
     draw_box()
     draw_pad_frame()
