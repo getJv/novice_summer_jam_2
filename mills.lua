@@ -44,9 +44,15 @@ function update_mills()
 
 end
 
-function draw_mills()
-    --32
+function draw_left_mill_box()
     spr(4, 0, box.y -16, 4, 4)
+end
+
+function draw_left_mill_mouth()
+    spr(19, 25, box.y -11, 1, 3)
+end
+
+function draw_mills()
     generate_circle_mill(left_mill)
     generate_circle_mill(right_mill)
 
