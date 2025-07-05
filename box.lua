@@ -21,7 +21,7 @@ end
 function update_box()
     paddles_collision()
     local next_x = box.x
-    if player_pulling then
+    if player_pulling  then
         next_x = next_x + 1
     elseif (can_update(3)) then
         next_x = next_x - 1

@@ -31,7 +31,7 @@ function update_pad_enemy()
         return
     end
 
-    pad_enemy.y = next_y
+    pad_enemy.y = 50
 end
 
 function draw_pad_enemy()

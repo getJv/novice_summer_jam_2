@@ -1,8 +1,7 @@
-
 left_mill = {
     x=10,
     y=100,
-    speed = 0.015, -- spin speed
+    speed = 0.02, -- spin speed
     angle = 0,
     radius = 8,
     color_1 = 4,-- bigger
@@ -13,8 +12,19 @@ left_mill = {
 
 
 function update_mills()
-    left_mill.angle = left_mill.angle + left_mill.speed
+    local direction = 1
+    if player_pulling then
+        left_mill.speed = 0.04
+        direction = -1  -- right
+    else
+        left_mill.speed = 0.02
+        direction = 1 -- left
+    end
+
+    left_mill.angle = left_mill.angle + left_mill.speed * direction
     if left_mill.angle > 1 then left_mill.angle = 0 end
+    if left_mill.angle < 0 then left_mill.angle = 1 end
+
 end
 
 function draw_mills()
