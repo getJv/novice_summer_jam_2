@@ -9,15 +9,28 @@ left_mill = {
     color_3 = 15, -- smaller
     num_dots = 6, -- dots will give movement idea
 }
+right_mill = {
+    x=117,
+    y=100,
+    speed = 0.02, -- spin speed
+    angle = 0,
+    radius = 8,
+    color_1 = 4,-- bigger
+    color_2 = 9,-- middle
+    color_3 = 15, -- smaller
+    num_dots = 6, -- dots will give movement idea
+}
 
 
 function update_mills()
     local direction = 1
     if player_pulling then
         left_mill.speed = 0.04
+        right_mill.speed = 0.04
         direction = -1  -- right
     else
         left_mill.speed = 0.02
+        right_mill.speed = 0.02
         direction = 1 -- left
     end
 
@@ -25,10 +38,15 @@ function update_mills()
     if left_mill.angle > 1 then left_mill.angle = 0 end
     if left_mill.angle < 0 then left_mill.angle = 1 end
 
+    right_mill.angle = right_mill.angle + right_mill.speed * direction
+    if right_mill.angle > 1 then right_mill.angle = 0 end
+    if right_mill.angle < 0 then right_mill.angle = 1 end
+
 end
 
 function draw_mills()
     generate_circle_mill(left_mill)
+    generate_circle_mill(right_mill)
 end
 
 function generate_circle_mill(mill_obj)
