@@ -3,6 +3,7 @@ version 42
 __lua__
 #include scene_main.lua
 #include scene_menu.lua
+#include scene_credits.lua
 #include mills.lua
 #include box.lua
 #include timer.lua

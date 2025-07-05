@@ -11,7 +11,7 @@ function scene_menu_update()
     end
 
     if btnp(4) then  -- 5 = btn Z
-        --credits_scene_init()
+        scene_credits_init()
     end
 end
 
