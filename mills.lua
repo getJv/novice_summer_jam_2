@@ -1,6 +1,6 @@
 left_mill = {
     x=10,
-    y=100,
+    y=97,
     speed = 0.02, -- spin speed
     angle = 0,
     radius = 8,
@@ -11,7 +11,7 @@ left_mill = {
 }
 right_mill = {
     x=114,
-    y=100,
+    y=97,
     speed = 0.02, -- spin speed
     angle = 0,
     radius = 8,
