@@ -45,5 +45,12 @@ function draw_box()
     half_y = box.h/2
     spr(1, box.x - half_w, box.y - half_y, 2, 2)
 
+    rectfill(
+            box.x + box.w/2 - 2,
+            box.y ,
+            127,
+            box.y + 1 ,
+            5
+    )
 
 end
