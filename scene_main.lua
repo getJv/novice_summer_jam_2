@@ -20,7 +20,7 @@ function scene_main_draw()
     draw_pad_frame()
     draw_pad()
     draw_pad_enemy()
-    draw_left_mill_box()
+    draw_mill_boxes()
     draw_mills()
 
 

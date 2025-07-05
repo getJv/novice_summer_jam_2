@@ -10,7 +10,7 @@ left_mill = {
     num_dots = 6, -- dots will give movement idea
 }
 right_mill = {
-    x=117,
+    x=114,
     y=100,
     speed = 0.02, -- spin speed
     angle = 0,
@@ -44,8 +44,9 @@ function update_mills()
 
 end
 
-function draw_left_mill_box()
+function draw_mill_boxes()
     spr(4, 0, box.y -16, 4, 4)
+    spr(8, 102  , box.y -16, 4, 4)
 end
 
 function draw_left_mill_mouth()
