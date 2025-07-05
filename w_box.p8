@@ -2,6 +2,7 @@ pico-8 cartridge // http://www.pico-8.com
 version 42
 __lua__
 #include scene_main.lua
+#include mills.lua
 #include box.lua
 #include timer.lua
 #include pad_frame.lua
