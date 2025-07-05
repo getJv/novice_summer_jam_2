@@ -35,11 +35,10 @@ function box_limits_collision(next_x)
         --play sad music sfx
         credits_msg = 1 -- lose condition
         scene_credits_init()
-
-
     end
+
     if (next_x + box.w/2 > 128) then
-        -- call open box
+        scene_open_box_init()
     end
 
 end
