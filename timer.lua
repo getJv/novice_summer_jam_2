@@ -1,10 +1,16 @@
-interval = 5
-timer = 0
+interval = 1020 -- number
+cycle = 1
 
 function update_timer()
-    timer = timer + 1
-    if timer >= interval then
-        box.x = box.x - 1
-        timer = 0
+    cycle = cycle + 1
+    if cycle >= interval then
+        cycle = 0
     end
 end
+
+-- use module of a given number to sync all updates by cycle
+function can_update(module_num)
+
+    return cycle % module_num == 0
+end
+

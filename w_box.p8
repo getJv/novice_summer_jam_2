@@ -4,6 +4,7 @@ __lua__
 #include scene_main.lua
 #include box.lua
 #include timer.lua
+#include pad_frame.lua
 #include debug.lua
 #include pre_loader.lua
 
