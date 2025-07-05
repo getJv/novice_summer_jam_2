@@ -5,6 +5,8 @@ __lua__
 #include box.lua
 #include timer.lua
 #include pad_frame.lua
+#include pad_enemy.lua
+#include pad.lua
 #include debug.lua
 #include pre_loader.lua
 
