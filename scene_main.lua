@@ -14,6 +14,7 @@ end
 
 function scene_main_draw()
     cls()
+    rectfill(0,0,127,127,15)
     draw_box()
     draw_pad_frame()
     draw_pad()
