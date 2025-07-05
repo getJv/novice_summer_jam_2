@@ -1,4 +1,4 @@
-box = {x=64,y=96,w=16,h=16}
+box = {x=64,y=93,w=16,h=16}
 
 function paddles_collision()
 
