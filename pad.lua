@@ -1,8 +1,8 @@
 pad = {
     x = pad_frame.x + pad_frame_padding, -- 2 to avoid initial collision
     y = pad_frame.y + pad_frame_padding + 2, -- 2 to avoid initial collision
-    w = (pad_frame.x + pad_frame_padding) + 6, -- 6 is the max width
-    h = 10
+    w = 6,
+    h = 15
 }
 player_pulling = false
 
@@ -21,5 +21,7 @@ function update_pad()
 end
 
 function draw_pad()
-    rectfill( pad.x,pad.y, pad.w, pad.y + pad.h ,11)
+
+    rectfill( pad.x,pad.y, pad.x +pad.w, pad.y + pad.h ,11)
+
 end
