@@ -26,17 +26,22 @@ function update_box()
     elseif (can_update(3)) then
         next_x = next_x - 1
     end
-    if box_limits_collision(next_x) then
-        return
-    end
+    box_limits_collision(next_x)
     box.x = next_x
 end
 
 function box_limits_collision(next_x)
-    if( next_x- box.w/2 < 0 or next_x + box.w/2 > 128) then
-        return true
+    if( next_x- box.w/2 < 0) then
+        --play sad music sfx
+        credits_msg = 1 -- lose condition
+        scene_credits_init()
+
+
     end
-    return false
+    if (next_x + box.w/2 > 128) then
+        -- call open box
+    end
+
 end
 
 
