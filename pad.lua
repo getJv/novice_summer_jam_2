@@ -9,7 +9,7 @@ player_pulling = false
 function update_pad()
     local next_y = pad.y +1
 
-    if (btn(4)) then
+    if (btn(5)) then
         next_y = pad.y - 1
     end
 

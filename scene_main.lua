@@ -1,9 +1,13 @@
 function scene_main_init()
+    box = {x=64,y=93,w=16,h=16}
     _update = scene_main_update
     _draw = scene_main_draw
 end
 
 function scene_main_update()
+    if (btn(4)) then
+        scene_menu_init() -- back to menu
+    end
 
     update_pad_enemy()
     update_pad()
