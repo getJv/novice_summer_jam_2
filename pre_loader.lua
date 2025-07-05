@@ -4,4 +4,4 @@ char_size = 4
 cell_size = 8
 max_cells = screen_width/cell_size
 
-_init = scene_menu_init
+_init = scene_open_box_init()
