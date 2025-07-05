@@ -22,6 +22,6 @@ end
 
 function draw_pad()
 
-    rectfill( pad.x,pad.y, pad.x +pad.w, pad.y + pad.h ,11)
+    rectfill( pad.x,pad.y, pad.x +pad.w, pad.y + pad.h ,13)
 
 end
