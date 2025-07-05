@@ -40,17 +40,43 @@ function box_limits_collision(next_x)
 end
 
 
+function draw_ropes()
+    -- right side
+    line(
+            box.x + box.w/2 - 2,
+            box.y - 1 ,
+            127,
+            box.y -1 ,
+            9
+    )
+    line(
+            box.x + box.w/2 - 2,
+            box.y ,
+            127,
+            box.y  ,
+            4
+    )
+    -- left side
+    line(
+            box.x - box.w/2 - 1,
+            box.y - 1 ,
+            0,
+            box.y -1 ,
+            9
+    )
+    line(
+            box.x - box.w/2 - 1,
+            box.y ,
+            0,
+            box.y  ,
+            4
+    )
+end
+
 function draw_box()
     half_w = box.w/2
     half_y = box.h/2
     spr(1, box.x - half_w, box.y - half_y, 2, 2)
-
-    rectfill(
-            box.x + box.w/2 - 2,
-            box.y ,
-            127,
-            box.y + 1 ,
-            5
-    )
+    draw_ropes()
 
 end
