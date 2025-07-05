@@ -1,6 +1,9 @@
 
 
 box = {x=64,y=96,w=16,h=16}
+move_interval = 5
+move_timer = 0
+
 
 function scene_main_init()
     _update = scene_main_update
@@ -8,6 +11,13 @@ function scene_main_init()
 end
 
 function scene_main_update()
+    move_timer += 1
+
+    if move_timer >= move_interval then
+    box.x -= 1
+    move_timer = 0
+    end
+
 end
 
 function draw_rules()
