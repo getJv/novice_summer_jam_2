@@ -41,7 +41,6 @@ end
 
 
 function draw_box()
-    print(player_pulling)
     half_w = box.w/2
     half_y = box.h/2
     rectfill(
