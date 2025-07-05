@@ -5,14 +5,21 @@ pad_enemy = {
     h = 4
 }
 
+glitch_step = 0
+
 function update_pad_enemy()
     local next_y = pad_enemy.y
 
-    local glitch_pop = flr(rnd(60)) + 1
-    if (can_update(glitch_pop)) then
+    local glitch_pop = flr(rnd(20)) + 1
+    if (can_update(glitch_pop) and glitch_step == 0) then
+        local random_percent = flr(rnd(100)) + 1
+        local random_step = flr(rnd(pad_frame.h/random_percent)) + 1
+        glitch_step =  random_step
+    end
 
-        local random_step = flr(rnd(pad.h)) + 1
-        next_y = next_y - random_step
+    if (glitch_step > 0 and can_update(2)) then
+            glitch_step = glitch_step -1
+        next_y = next_y - 3
     end
 
     -- apply gravity
