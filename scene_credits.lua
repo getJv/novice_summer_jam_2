@@ -1,6 +1,9 @@
 credits_msg = 0
 function scene_credits_init()
-    music(1)
+    if(credits_msg ==1)then -- gameover
+        sfx(5)
+    end
+
     _update = scene_credits_update
     _draw = scene_credits_draw
 end
@@ -18,6 +21,7 @@ function scene_credits_draw()
     cls()
     if(credits_msg == 1) then
         draw_text("gameover. try again!",-7,8)
+
 
     end
 
