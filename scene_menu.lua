@@ -62,10 +62,10 @@ function draw_title_2()
 end
 
 function title_bg()
-    local text_width = 50
-    local x_pos = (screen_width - text_width) / 2  -- find middle screen
+    local text_width = 53
+    local x_pos = (screen_width - text_width) / 2  -1 -- find middle screen
     local y_pos = screen_height / 2 + (cell_size*-5) +2
-    rectfill(x_pos-2,y_pos-2,x_pos+text_width+2,2+y_pos+text_width/2,4)
+    rectfill(x_pos-2,y_pos-2,x_pos+text_width+2,2+y_pos+text_width/2,2)
     rectfill(x_pos,y_pos,x_pos+text_width,y_pos+text_width/2,9)
     rect(x_pos,y_pos,x_pos+text_width,y_pos+text_width/2,4)
 end
