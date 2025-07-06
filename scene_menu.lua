@@ -53,7 +53,7 @@ function draw_title_1()
 end
 
 function draw_title_2()
-    local text = "in the box?"
+    local text = "in this box?"
     local text_width = #text * char_size  -- each char have ~4 pixels with
     -- max width of PICO-8
     local x_pos = (screen_width - text_width) / 2  -- find middle screen

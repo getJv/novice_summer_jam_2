@@ -20,9 +20,9 @@ function scene_credits_draw()
 
     end
 
-    draw_text("novice summer jam 2025-02",-5,14)
+    draw_text("novice summer jam 2 2025-07",-5,14)
     draw_text("theme:",-3,14)
-    draw_text("what is in the box",-2,14)
+    draw_text("what is in this box?",-2,14)
 
     draw_text("thank you for playing!",0,9)
     draw_text("developed by getjv",2,3)
