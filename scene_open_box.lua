@@ -1,5 +1,6 @@
 box_open = false
 function scene_open_box_init()
+    music(1)
     _update = scene_open_box_update
     _draw = scene_open_box_draw
 end

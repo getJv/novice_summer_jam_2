@@ -1,5 +1,6 @@
 credits_msg = 0
 function scene_credits_init()
+    music(1)
     _update = scene_credits_update
     _draw = scene_credits_draw
 end

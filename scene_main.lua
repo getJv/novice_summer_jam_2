@@ -1,4 +1,5 @@
 function scene_main_init()
+    music(1)
     box = {x=64,y=93,w=16,h=16}
     _update = scene_main_update
     _draw = scene_main_draw
