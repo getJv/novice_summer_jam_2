@@ -2,6 +2,8 @@ credits_msg = 0
 function scene_credits_init()
     if(credits_msg ==1)then -- gameover
         sfx(5)
+    else
+        music(3)
     end
 
     _update = scene_credits_update

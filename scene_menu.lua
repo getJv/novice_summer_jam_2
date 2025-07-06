@@ -1,5 +1,5 @@
 function scene_menu_init()
-    music(0)
+    music(1)
     _update = scene_menu_update
     _draw = scene_menu_draw
 

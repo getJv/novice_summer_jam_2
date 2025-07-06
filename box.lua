@@ -19,6 +19,11 @@ end
 
 
 function update_box()
+
+    if(box.x < 40 and can_update(10) or box.x > 88 and can_update(10))then
+        sfx(8)
+    end
+
     paddles_collision()
     local next_x = box.x
     if player_pulling  then

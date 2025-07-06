@@ -1,6 +1,6 @@
 box_open = false
 function scene_open_box_init()
-    music(1)
+    sfx(4)
     _update = scene_open_box_update
     _draw = scene_open_box_draw
 end
@@ -9,6 +9,7 @@ function scene_open_box_update()
 
     if btnp(4) then  -- 5 = btn Z
         if(not box_open) then
+            sfx(4)
             box_open = true
         end
     end
